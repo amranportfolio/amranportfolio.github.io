@@ -1,0 +1,99 @@
+$body-bg: #333;
+$font-light:#fff;
+$primary-color:#008ed6;
+$icon-size:30px;
+body{
+  background: $body-bg;
+  color: $font-light;
+}
+.navbar{
+  border-bottom: 3px solid $primary-color;
+  background:  #292b2c;
+  opacity: .9;
+}
+#home{
+  background: url('../img/desk.jpeg') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .dark-overlay{
+    background: rgba(0,0,0,0.7);
+    min-height: 700px;
+  }
+  .fas{
+    background: #fff;
+    color: $primary-color;
+    padding: 4px;
+    font-size: $icon-size;
+    border-radius: 5px;
+  }
+  .card-form{
+    opacity: 0.9;
+  }
+  .home-inner{
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+#explore-main-section{
+  .fas{
+    background: #000;
+    color: #fff;
+    padding: 4px;
+    font-size: $icon-size;
+    border-radius: 5px;
+  }
+  img{
+    min-width: 100%;
+  }
+}
+#create-main-section{
+  img{
+    min-width: 100%;
+  }
+  .fas{
+    background: #fff;
+    color: $primary-color;
+    padding: 4px;
+    font-size: $icon-size;
+    border-radius: 5px;
+  }
+}
+#share-main-section{
+  .fas{
+    background: #000;
+    color: #fff;
+    padding: 4px;
+    font-size: $icon-size;
+    border-radius: 5px;
+  }
+  img{
+    min-width: 100%;
+  }
+}
+
+@media (max-width:767px){
+#home  h1{
+    font-size: 35px;
+  }
+}
+
+@media (max-width:360px){
+#home, #explore, #share, #create {
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 30px;
+  }
+ p{
+    font-size: 18px;
+  }
+
+.icon img{
+      width: 25px;
+    }
+
+  }
+}
