@@ -1,0 +1,2 @@
+<body onload="init()" allowtransparency="true" style="background:transparent"><table class="tab t100" id="c2" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="c1" valign="middle"><a href="https://www.timeanddate.com/worldclock/bangladesh/dhaka" id="t1c" title="clock provided by timeanddate.com" target="_blank"><span id="t1">Mon, 4 Feb 2019, 10:35:20 pm</span>&nbsp;<span id="t1a">BST</span></a></td></tr></tbody></table>
+</body>
