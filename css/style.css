@@ -1,1 +1,81 @@
-body{margin-top:90px;border-radius:0px}.navbar{box-shadow:2px 2px 2px #3292a6;background:#fff;opacity:0.9}.nav-item{font-size:1.4rem;padding-right:20px}.nav-link{color:#252525}.nav-link:hover{color:#3292a6}.nav-item:last-child{padding-right:0}#home{position:relative;background-image:url(../img/mountains.jpg);background-size:cover;min-height:600px}#home .primary-overlay{background:rgba(50,146,156,0.7);min-height:600px;position:absolute;top:0;left:0;width:100%;height:100%}#subscribe{background:#252525}#authors img{margin-top:-50px}#authors .fab{font-size:25px;color:#3292a6}#authors .card:hover{background:#3292a6;color:#fff}#authors .card:hover .fab{color:#fff}@media (max-width: 575px){#home h1{font-size:4rem}}
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins', sans-serif;
+box-sizing: border-box;
+}
+
+.container{
+width: 100vw;
+height: 100vh;
+background-image: url(images/background.png);
+background-position: center;
+padding: 0 8%;
+background-size: cover;
+position: relative;
+}
+
+.logo{
+width: 120px;
+padding: 20px 0;
+cursor: pointer;
+ }
+
+.content {
+top: 50%;
+position: absolute;
+transform: translateY(-50%)
+color: #fff;
+}
+
+.content h1{
+font-size: 64px;
+font-weight: 600;
+}
+
+.content button{
+background: transparent;
+border: 2px solid #fff;
+outline: none;
+padding: 12px 25px;
+color: #fff;
+display: flex;
+}
+
+.content button img{
+width: 15px;
+margin-left: 10px;
+}
+
+.launch-time{
+display: flex;
+}
+
+.launch-time div{
+flex-basis: 100px;
+}
+
+.launch-time div p{
+font-size: 60px;
+margin-bottom: -14px;
+}
+
+.rocket{
+width: 250px;
+position: absolute;
+right: 10%;
+bottom: 0;
+animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+0%{
+bottom: 0;
+opacity: 0;
+}
+100%{
+bottom: 105%;
+opacity: 1;
+}
+}
