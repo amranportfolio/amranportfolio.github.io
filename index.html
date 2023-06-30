@@ -3,11 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coming Soon Page</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="container">
+ <div class="logo">
 <h1>AMRAN AHMED</h1>
+ </div>
 <div class="content">
 <p>Website Is Under Maintenance</p>
 <h1>I Will Be Back Very Soon</h1>
@@ -32,6 +33,7 @@
 </div>
 <button type="button">About Me</button>
 </div>
+<div>
 <img src="img/rocket.png" class="rocket">
 </div>
 
@@ -79,7 +81,92 @@ document.getElementById("seconds").innerHTML = "00";
 }, 1000);
 
 </script>
+<style>
 
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins', sans-serif;
+box-sizing: border-box;
+}
+
+.container{
+width: 100vw;
+height: 100vh;
+background-image: url(images/background.png);
+background-position: center;
+padding: 0 8%;
+background-size: cover;
+position: relative;
+}
+
+.logo{
+width: 120px;
+padding: 20px 0;
+cursor: pointer;
+ }
+.logo h1{
+ font-size: 30px;
+}
+.content {
+top: 50%;
+position: absolute;
+transform: translateY(-50%)
+color: #fff;
+}
+
+.content h1{
+font-size: 64px;
+font-weight: 600;
+}
+
+.content button{
+background: transparent;
+border: 2px solid #fff;
+outline: none;
+padding: 12px 25px;
+color: #fff;
+display: flex;
+}
+
+.content button img{
+width: 15px;
+margin-left: 10px;
+}
+
+.launch-time{
+display: flex;
+}
+
+.launch-time div{
+flex-basis: 100px;
+}
+
+.launch-time div p{
+font-size: 60px;
+margin-bottom: -14px;
+}
+
+.rocket{
+width: 250px;
+position: absolute;
+right: 10%;
+bottom: 0;
+animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+0%{
+bottom: 0;
+opacity: 0;
+}
+100%{
+bottom: 105%;
+opacity: 1;
+}
+}
+
+</style>
 </body>
 </html>
 
